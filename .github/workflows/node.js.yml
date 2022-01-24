@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm install -g mocha
     - run: npm install
-    - run: npx mocha -r ts-node/register azure-tests.ts
+    - run: npm test
