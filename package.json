@@ -10,5 +10,8 @@
         "@types/mocha": "^9.0.0",
         "mocha": "^9.1.3",
         "ts-node": "^7.0.1"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/mocha -r ts-node/register ./azure-tests.ts"
     }
 }
