@@ -12,6 +12,6 @@
         "ts-node": "^7.0.1"
     },
     "scripts": {
-        "test": "./node_modules/.bin/mocha -r ts-node/register ./azure-tests.ts"
+        "test": "./node_modules/.bin/mocha --timeout 10000 -r ts-node/register ./azure-tests.ts"
     }
 }
