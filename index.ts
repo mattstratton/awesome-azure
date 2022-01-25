@@ -1,5 +1,5 @@
 // Copyright 2016-2020, Pulumi Corporation.  All rights reserved.
-// hi kat
+// hi kat and april
 
 import * as pulumi from "@pulumi/pulumi";
 
@@ -74,7 +74,8 @@ export const vm = new compute.VirtualMachine("server-vm", {
             sku: "16.04-LTS",
             version: "latest",
         },
-    }
+    },
+    tags: { Name: "floyd" }
 });
 
 // The public IP address is not allocated until the VM is running, so wait for that
