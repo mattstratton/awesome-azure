@@ -74,8 +74,7 @@ export const vm = new compute.VirtualMachine("server-vm", {
             sku: "16.04-LTS",
             version: "latest",
         },
-    },
-    tags: { Name: "floyd" }
+    }
 });
 
 // The public IP address is not allocated until the VM is running, so wait for that
